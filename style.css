@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    width: 31.25px;
+    height: 31.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.column {
+    width: 31.25px;
+    height: 31.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.column:hover {
+  background-color: yellow;
+}
