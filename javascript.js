@@ -33,8 +33,8 @@ function addHoverEffect() {
 function promptMe() {
     // 1. Ask user for input
     const gridNumber = parseInt(prompt("Enter grid size (e.g. 16)"));
-    if (gridNumber > 100) {
-        alert("Max size is 100");
+    if (gridNumber > 100 || gridNumber < 1 || isNaN(gridNumber)) {
+        alert("Min size is 1 and max size is 100, and should be a number.");
         return;
     }
     if (!gridNumber || gridNumber <= 0) return;
