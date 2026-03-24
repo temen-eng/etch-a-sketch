@@ -1,41 +1,43 @@
+/* Page layout */
 body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    border: 1px solid blue;
-    background-color: pink;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+/* Grid container */
+.container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid blue;
+    background-color: pink;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each row fills equal height */
 .row {
-    width: 31.25px;
-    height: 31.25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
+    flex: 1;
 }
 
+/* Each cell fills equal width */
 .column {
-    width: 31.25px;
-    height: 31.25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    border: 1px solid black; /* optional grid lines */
+    box-sizing: border-box;
 }
 
-div.column:hover {
-  background-color: yellow;
+/* Hover effect */
+.column:hover {
+    background-color: yellow;
+}
+
+/* Permanent color after hover (JS adds this) */
+.hovered {
+    background-color: lightblue;
 }
